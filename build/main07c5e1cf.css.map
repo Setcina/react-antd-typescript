@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/component/header.scss"],"names":[],"mappings":"AAAA;AACA;AACA;AACA,4EAA4E","file":"main07c5e1cf.css","sourcesContent":[".bg {\n  width: 800px;\n  height: 200px;\n  background: url(./static/images/01-eb386.min.png) no-repeat center center; }\n"],"sourceRoot":""}

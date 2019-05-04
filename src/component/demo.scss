@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+*{  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.react-demo{    
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    .demo-name{  
+        font-size: 24px;
+        text-align: center;
+        line-height: 48px;
+        background: url(../../images/01.png) repeat-x;
+        color: #fff;
+    }
+}

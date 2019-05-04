@@ -3,20 +3,25 @@ import * as actionTypes from './actionTypes';
 import axios from 'axios';
 
 export const demoGetApi=()=>{ 
-    
-    return dispatch=>{
+    return dispatch=>{    
         axios.get('http://jsonplaceholder.typicode.com/posts')
         .then(response=>{   
-            console.log(response)
-            return{   
+            const {data} = response;
+            dispatch({   
                 type:actionTypes.GET_API,
-                params:response
-            }
-        
+                params:data
+            })        
         })
         .catch(error=>{ 
 
         })
     }
 
+}
+
+export const demoGet=()=>{  
+    return{   
+        type:actionTypes.GET_API,
+        params:"niha"
+    }
 }

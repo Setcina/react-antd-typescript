@@ -1,8 +1,11 @@
 import {GET_API} from './actionTypes';
 
 export const getApiFn=(state,action)=>{ 
-    console.log(action);
-    return state;
+    
+    const getApi = action.params;
+    const newState = {...state,getApi:getApi};
+    
+    return newState;
 }
 
 export const actionMap={};
